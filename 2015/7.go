@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("/home/alex/aoc/inputs/7-2015.txt")
+	file, err := os.Open("D:\\code\\aoc\\inputs\\2015\\7.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -20,8 +20,6 @@ func main() {
 	scanner := bufio.NewScanner(file)
 
 	m := make(map[string]int)
-	instr := make([]string)
-	m["1"] = 1
 	for scanner.Scan() {
 
 		s := scanner.Text()
